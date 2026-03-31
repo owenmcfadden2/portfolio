@@ -14,5 +14,19 @@
     </nav>
 
     <h1>Contact Page</h1>
+
+    <form: action="mailto:omcfadden@ucsd.edu" method="POST", enctype="text/plain">
+        <label>Email:
+        <input name="email" type="email">
+        </label>
+        
+        <label>Subject:
+        <input name="subject">
+        </label>
+
+        <label>Message:
+        <textarea name="body"></textarea>
+        </label>
+    </form>
 </body>
 </html>
