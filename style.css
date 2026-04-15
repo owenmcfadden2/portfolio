@@ -136,7 +136,7 @@ h1 + p a:hover {
 
 h1 + p + p {
   font-style: italic;
-  color: oklch(35% 0% 0);
+  color: color-mix(in oklch, canvastext, canvas 30%);
   border-left: 3px solid var(--color-accent);
   padding-left: 1em;
   margin-block: 1em 2em;
