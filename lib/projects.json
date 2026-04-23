@@ -1,62 +1,74 @@
 [
-    {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet neque, molestias numquam aut consequatur, aliquam veniam pariatur quisquam sit rem dolorem commodi animi inventore? Tenetur id vero laborum! Architecto, dolore!"
-    },
-    {
-        "title": "Consequuntur architecto magnam ducimus!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Soluta aut commodi eius optio, placeat aperiam vel modi odio, asperiores iure vero praesentium sapiente voluptatum fugit repudiandae rerum tenetur doloribus! Maxime veniam numquam ratione sequi sit error nisi ducimus!"
-    },
-    {
-        "title": "Maiores molestiae illo perferendis!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quis quos perferendis omnis corporis natus rerum fuga accusantium dicta! Consequatur quisquam facilis architecto neque deserunt, sed rerum ducimus accusantium doloremque necessitatibus aperiam illo voluptatum accusamus, quibusdam, fugiat aut soluta?"
-    },
-    {
-        "title": "Ab aliquid reprehenderit dolorem?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Minima, ratione. Eligendi illo molestiae repudiandae, ullam maiores quis ducimus unde sint impedit sequi nobis, ea quia voluptatem a ipsum ipsam voluptates est aspernatur veniam cum accusantium debitis architecto. Natus!"
-    },
-    {
-        "title": "Quas rem sequi excepturi.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sint nesciunt nihil placeat unde temporibus enim cum, perspiciatis facere laudantium dolor consequatur similique ducimus ipsam ad incidunt ut sequi neque vero voluptatum! Odio consectetur sapiente exercitationem tenetur ut neque."
-    },
-    {
-        "title": "Nam fugit vitae quod.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Et impedit suscipit aliquam, saepe ducimus quae sapiente similique! Dignissimos maxime, molestiae, qui atque dolores nisi ad quae repudiandae, illum libero quaerat laborum quam omnis eveniet officia cumque exercitationem itaque!"
-    },
-    {
-        "title": "Illo unde adipisci tempore.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Explicabo corrupti voluptate ipsam quidem temporibus doloribus provident assumenda quaerat quibusdam sint animi atque veritatis commodi veniam et, aliquid labore nulla iusto, enim aperiam! Eaque odio vel quasi voluptas aliquam?"
-    },
-    {
-        "title": "Illo repudiandae laudantium adipisci.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sint quisquam suscipit vel a rem repellat porro reprehenderit, ipsa qui possimus magni neque, est ut eligendi assumenda quam adipisci doloribus dignissimos dolorum explicabo quasi velit. Fuga qui necessitatibus architecto."
-    },
-    {
-        "title": "Accusamus animi ex itaque!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tempora, voluptas repudiandae. Deleniti, eos soluta delectus totam minus, error quos ratione perspiciatis dignissimos iusto odit fuga reprehenderit consequuntur. Quis numquam quos magni doloremque eligendi atque in labore natus. Nulla!"
-    },
-    {
-        "title": "Voluptas eum nisi ad?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Soluta consequatur dolorum nesciunt eius praesentium temporibus. Eaque, iure! Sunt quisquam eveniet, necessitatibus laborum cumque libero iure totam eos itaque corrupti recusandae aspernatur porro amet ut nobis vero velit quam."
-    },
-    {
-        "title": "Sequi a nobis voluptatibus?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quas, neque consectetur ipsum ab quia repellat iusto animi odit rerum dicta, fugiat ut autem ullam veritatis ducimus ea error ex distinctio praesentium. Eligendi, voluptatum animi doloremque ullam ab dolore!"
-    },
-    {
-        "title": "Incidunt nobis magnam neque?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Corrupti nisi recusandae, perspiciatis tempore eaque tempora nobis modi blanditiis velit ratione? Consectetur saepe, ut error beatae adipisci minus aliquam suscipit molestiae tempora corporis velit necessitatibus enim asperiores. Magni, omnis?"
-    }
+  {
+    "title": "F1 Race Analysis",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analysis of F1 race data measuring how grid position affects final race results."
+  },
+  {
+    "title": "Recipe Analysis",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analysis of how protein content of recipes affects their overall ratings on a large recipe dataset."
+  },
+  {
+    "title": "NBA Salary Cap Analysis",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analysis of NBA salary cap data and how contract size pertains to player playtime."
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A personal portfolio website built with HTML, CSS, and JavaScript, hosted on GitHub Pages."
+  },
+  {
+    "title": "Data Visualization Lab",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Interactive data visualizations built using D3.js for DSC 106."
+  },
+  {
+    "title": "Machine Learning Classification Model",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a classification model using scikit-learn to predict outcomes from a real-world dataset."
+  },
+  {
+    "title": "SQL Database Project",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Designed and queried a relational database for a business analytics use case."
+  },
+  {
+    "title": "Exploratory Data Analysis",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Performed EDA on a large dataset using pandas and matplotlib to uncover patterns and insights."
+  },
+  {
+    "title": "Econometrics Research Paper",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed economic data using regression models for an Econometrics course."
+  },
+  {
+    "title": "Hockey Analytics Project",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed NHL player performance data to identify trends and build predictive models."
+  },
+  {
+    "title": "NBA Stats Dashboard",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A data dashboard visualizing NBA player and team statistics using Python and Tableau."
+  },
+  {
+    "title": "Intro Data Science Project",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "First data science project exploring a real-world dataset with Python and basic statistical analysis."
+  }
 ]
