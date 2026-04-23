@@ -2,19 +2,19 @@
   {
     "title": "F1 Race Analysis",
     "year": "2025",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://owenmcfadden2.github.io/portfolio/images/f1.png",
     "description": "Analysis of F1 race data measuring how grid position affects final race results."
   },
   {
     "title": "Recipe Analysis",
     "year": "2025",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://owenmcfadden2.github.io/portfolio/images/recipe.png",
     "description": "Analysis of how protein content of recipes affects their overall ratings on a large recipe dataset."
   },
   {
     "title": "NBA Salary Cap Analysis",
     "year": "2025",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://owenmcfadden2.github.io/portfolio/images/nba.png",
     "description": "Analysis of NBA salary cap data and how contract size pertains to player playtime."
   },
   {
