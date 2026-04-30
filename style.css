@@ -307,3 +307,13 @@ body > ul li:last-child {
   border-radius: 50%;
   flex-shrink: 0;
 }
+
+.searchBar {
+  width: 100%;
+  padding: 0.5em;
+  margin-block: 1em;
+  font: inherit;
+  border: 1px solid var(--color-rule);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+}

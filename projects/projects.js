@@ -11,37 +11,64 @@ if (title) {
 
 renderProjects(projects, projectsContainer, 'h2');
 
-// Step 3.1: Roll up project data by year
-let rolledData = d3.rollups(
-  projects,
-  (v) => v.length,
-  (d) => d.year,
-);
-
-let data = rolledData.map(([year, count]) => {
-  return { value: count, label: year };
-});
-
-// Pie chart
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
-let sliceGenerator = d3.pie().value((d) => d.value);
-let arcData = sliceGenerator(data);
-let arcs = arcData.map((d) => arcGenerator(d));
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
-arcs.forEach((arc, idx) => {
-  d3.select('svg')
-    .append('path')
-    .attr('d', arc)
-    .attr('fill', colors(idx));
-});
+// Step 4.4: Refactored pie chart function
+function renderPieChart(projectsGiven) {
+  let newRolledData = d3.rollups(
+    projectsGiven,
+    (v) => v.length,
+    (d) => d.year,
+  );
 
-// Legend
-let legend = d3.select('.legend');
-data.forEach((d, idx) => {
-  legend
-    .append('li')
-    .attr('style', `--color:${colors(idx)}`)
-    .attr('class', 'legend-item')
-    .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
+  let newData = newRolledData.map(([year, count]) => {
+    return { value: count, label: year };
+  });
+
+  let newSliceGenerator = d3.pie().value((d) => d.value);
+  let newArcData = newSliceGenerator(newData);
+  let newArcs = newArcData.map((d) => arcGenerator(d));
+
+  // Clear existing paths and legend
+  let newSVG = d3.select('svg');
+  newSVG.selectAll('path').remove();
+  d3.select('.legend').selectAll('li').remove();
+
+  // Draw new paths
+  newArcs.forEach((arc, idx) => {
+    newSVG
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', colors(idx));
+  });
+
+  // Draw new legend
+  let legend = d3.select('.legend');
+  newData.forEach((d, idx) => {
+    legend
+      .append('li')
+      .attr('style', `--color:${colors(idx)}`)
+      .attr('class', 'legend-item')
+      .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
+  });
+}
+
+// Call on page load
+renderPieChart(projects);
+
+// Step 4.1 & 4.2: Search functionality
+let query = '';
+let searchInput = document.querySelector('.searchBar');
+
+searchInput.addEventListener('input', (event) => {
+  query = event.target.value;
+
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
+
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+  renderPieChart(filteredProjects);
 });
