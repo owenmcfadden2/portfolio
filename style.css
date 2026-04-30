@@ -259,3 +259,11 @@ body > ul li:last-child {
   height: 15em;
   object-fit: cover;
 }
+
+.project-year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: var(--color-muted);
+  margin: 0;
+  font-style: italic;
+}
