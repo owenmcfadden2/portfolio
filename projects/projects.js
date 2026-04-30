@@ -11,16 +11,18 @@ if (title) {
 
 renderProjects(projects, projectsContainer, 'h2');
 
-// Step 2.1: Data with labels
-let data = [
-  { value: 1, label: 'apples' },
-  { value: 2, label: 'oranges' },
-  { value: 3, label: 'mangos' },
-  { value: 4, label: 'pears' },
-  { value: 5, label: 'limes' },
-  { value: 5, label: 'cherries' },
-];
+// Step 3.1: Roll up project data by year
+let rolledData = d3.rollups(
+  projects,
+  (v) => v.length,
+  (d) => d.year,
+);
 
+let data = rolledData.map(([year, count]) => {
+  return { value: count, label: year };
+});
+
+// Pie chart
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 let sliceGenerator = d3.pie().value((d) => d.value);
 let arcData = sliceGenerator(data);
@@ -34,7 +36,7 @@ arcs.forEach((arc, idx) => {
     .attr('fill', colors(idx));
 });
 
-// Step 2.2: Legend
+// Legend
 let legend = d3.select('.legend');
 data.forEach((d, idx) => {
   legend
