@@ -11,15 +11,20 @@ if (title) {
 
 renderProjects(projects, projectsContainer, 'h2');
 
-// Step 1.3: Arc generator
-let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+// Step 2.1: Data with labels
+let data = [
+  { value: 1, label: 'apples' },
+  { value: 2, label: 'oranges' },
+  { value: 3, label: 'mangos' },
+  { value: 4, label: 'pears' },
+  { value: 5, label: 'limes' },
+  { value: 5, label: 'cherries' },
+];
 
-// Step 1.4 & 1.5: Pie chart from project data
-let data = [1, 2, 3, 4, 5, 5];
-let sliceGenerator = d3.pie();
+let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+let sliceGenerator = d3.pie().value((d) => d.value);
 let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
-
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
 arcs.forEach((arc, idx) => {
@@ -27,4 +32,14 @@ arcs.forEach((arc, idx) => {
     .append('path')
     .attr('d', arc)
     .attr('fill', colors(idx));
+});
+
+// Step 2.2: Legend
+let legend = d3.select('.legend');
+data.forEach((d, idx) => {
+  legend
+    .append('li')
+    .attr('style', `--color:${colors(idx)}`)
+    .attr('class', 'legend-item')
+    .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
 });
