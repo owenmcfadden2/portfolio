@@ -267,3 +267,9 @@ body > ul li:last-child {
   margin: 0;
   font-style: italic;
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
