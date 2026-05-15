@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "https://owenmcfadden2.github.io/portfolio/images/bikewatching.png",
+    "description": "Interactive map visualizing Bluebikes station traffic and bike lanes across Boston and Cambridge using D3.js and Mapbox GL.",
+    "url": "https://owenmcfadden2.github.io/lab8/"
+  },
+  {
     "title": "F1 Race Analysis",
     "year": "2025",
     "image": "https://owenmcfadden2.github.io/portfolio/images/f1.png",
@@ -56,7 +63,7 @@
   {
     "title": "Hockey Analytics Project",
     "year": "2024",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://vis-society.github.io/portfolio/images/hockey.png",
     "description": "Analyzed NHL player performance data to identify trends and build predictive models."
   },
   {
@@ -64,11 +71,5 @@
     "year": "2023",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "A data dashboard visualizing NBA player and team statistics using Python and Tableau."
-  },
-  {
-    "title": "Intro Data Science Project",
-    "year": "2023",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "First data science project exploring a real-world dataset with Python and basic statistical analysis."
   }
 ]
