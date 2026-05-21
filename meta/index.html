@@ -10,13 +10,25 @@
     <h1>Meta</h1>
     <p>Stats and visualizations about the codebase behind this website.</p>
 
-    <div id="stats"></div>
+    <div>
+      <label>
+        Show commits until:
+        <input type="range" id="commit-progress" min="0" max="100" value="100" />
+        <time id="commit-time"></time>
+      </label>
+    </div>
 
-    <h2>Commits by time of day</h2>
-    <div id="chart"></div>
-
-    <p id="selection-count">No commits selected</p>
-    <dl id="language-breakdown" class="stats"></dl>
+    <div id="scrolly-1">
+        <div id="scatter-plot">
+            <div id="stats"></div>
+            <dl id="files"></dl>
+            <h2>Commits by time of day</h2>
+            <div id="chart"></div>
+            <p id="selection-count">No commits selected</p>
+            <dl id="language-breakdown" class="stats"></dl>
+        </div>
+        <div id="scatter-story"></div>
+    </div>
 
     <dl id="commit-tooltip" class="info tooltip" hidden>
       <dt>Commit</dt>
@@ -24,7 +36,7 @@
       <dt>Date</dt>
       <dd id="commit-date"></dd>
       <dt>Time</dt>
-      <dd id="commit-time"></dd>
+      <dd id="commit-time-tooltip"></dd>
       <dt>Author</dt>
       <dd id="commit-author"></dd>
       <dt>Lines edited</dt>
